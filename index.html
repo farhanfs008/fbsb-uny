@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FBSB UNY</title>
+  <link rel="stylesheet" href="dist/output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Header start -->
+  <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-50">
+    <div class="container">
+      <div class="flex items-center justify-between relative">
+        <div class="px-2 py-4">
+          <a href="https://fbsb.uny.ac.id" class="space-x-3 rtl:space-x-reverse">
+            <img src="dist/img/logo-fbsb.png" class="h-8" alt="Logo FBSB UNY">
+          </a>
+        </div>
+        <div class="flex-items-center px-4">
+          <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 top-3 lg:hidden">
+            <span class="hamburger-line  origin-top-left"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line origin-bottom-left "></span>
+          </button>
+          <nav id="nav-menu" class="lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full">
+            <ul class="block lg:flex">
+              <li class="group">
+                <a href="index.html" class="text-base text-black py-2 mx-8 flex group-hover:text-indigo-500">Beranda</a>
+              </li>
+              <li class="group">
+                <a href="profil.html" class="text-base text-black py-2 mx-8 flex group-hover:text-indigo-500">Profil</a>
+              </li>
+              <li class="group">
+                <a href="prodi.html" class="text-base text-black py-2 mx-8 flex group-hover:text-indigo-500">Program Studi</a>
+              </li>
+              <li class="group">
+                <a href="fasilitas.html" class="text-base text-black py-2 mx-8 flex group-hover:text-indigo-500">Fasilitas</a>
+              </li>
+              <li class="group">
+                <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+                  <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-4 py-2 text-base text-black rounded-lg cursor-pointer hover:bg-indigo-500  hover:text-white transition duration-300 ease-in-out">
+                    <svg class="w-5 h-5 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="indonesia"><path fill="#f0f0f0" d="M0 85.337h512v341.326H0z"></path><path fill="#a2001d" d="M0 85.337h512V256H0z"></path></svg>
+                    ID
+                  </button>
+                  <!-- Dropdown -->
+                  <div class="z-50 hidden my-4 text-base list-none divide-y rounded-lg shadow bg-indigo-500" id="language-dropdown-menu">
+                    <ul class="py-2 font-medium" role="none">
+                      <li>
+                        <a href="#" class="flex px-4 py-2 text-sm text-black hover:bg-indigo-500" role="menuitem">
+                          <div class="inline-flex items-center">
+                            <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full me-2" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us" viewBox="0 0 512 512"><g fill-rule="evenodd"><g stroke-width="1pt"><path fill="#bd3d44" d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/><path fill="#fff" d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/></g><path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)"/><path fill="#fff" d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z" transform="scale(3.9385)"/></g></svg>              
+                            EN
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header end -->
+  <!-- Hero section Start -->
+  <div class="relative isolate px-6 pt-14 lg:px-8">
+    <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+      <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+    </div>
+    <section id="home" class="pt-36">
+      <div class="container">
+        <div class="flex flex-wrap md:px-4 sm:px-0 p-6 bg-white border border-indigo-200 rounded shadow-lg hover:bg-indigo-50 ">
+          <div class="sm:w-full md:w-1/2 self-center md:px-4 sm:px-0">
+            <div id="caption" class="my-2">
+              <h3 class="sm:text-sm md:text-2xl">Selamat datang di laman resmi</h3>
+              <h1 class="font-semibold text-2xl leading-8 text-indigo-500">Fakultas Bahasa, Seni dan Budaya</h1>
+              <h2 class="text-l font-semibold">Universitas Negeri Yogyakarta</h2>
+              <p class="md:mb-4 sm:mb-8 text-sm sm:leading-7">Mengasah <b class="text-indigo-600">Kreativitas, Merawat</b> Kebudayaan</p>
+            </div>
+            <div class="my-2 text-center relative rounded-full py-1 text-[12px] md:leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">Penerimaan mahasiswa baru. <a href="https://pmb.uny.ac.id" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Daftar <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </div>
+          <img class="sm:w-full md:w-1/2 lg:rounded-lg sm:rounded-none sm:mt-2 " src="https://ekspresionline.com/wp-content/uploads/2023/06/IMG_20230611_111037-scaled.jpg" alt="">
+        </div>
+      </div>
+    </section>
+  <!-- Hero section End -->
+  <!-- About section start -->
+    <section id="about" class="pt-36 pb-32">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-10">
+            <h1 id="visimisi" class="text-center font-bold text-2xl">Visi & Misi</h1>
+            <h2 id="visi" class="font-bold text-xl mt-6 mb-0">Visi</h2>
+            <p class="py-4 text-l w-full">Pada tahun 2025 menjadi fakultas yang unggul dalam bidang ilmu dan pendidikan bahasa, sastra, dan seni di Asia yang akademis, humanis, inovatif, dan profesional berlandaskan ketaqwaan, kemandirian dan kecendekiaan.</p>
+            <h2 id="misi" class="font-bold text-xl mt-6 mb-2">Misi</h2>
+            <ol class="px-4 list-decimal">
+              <li class="mb-2">Menyelenggarakan pendidikan dalam bidang ilmu dan pendidikan bahasa, sastra, dan seni yang berbasis penelitian untuk menyiapkan lulusan unggul di tingkat Asia  yang akademis, humanis, inovatif, dan profesional berlandaskan kecendekiaan dan ketakwaan.</li>
+              <li class="mb-2">Menyelenggarakan penelitian untuk menemukan, mengembangkan, dan menyebarluaskan ilmu pengetahuan bidang kependidikan dan nonkependidikan bahasa, sastra, dan seni yang bermutu dan relevan dengan kebutuhan masyarakat.</li>
+              <li class="mb-2">Menyelenggarakan kegiatan pengabdian kepada masyarakat berbasis penelitian dalam bidang ilmu dan pendidikan bahasa, sastra, dan seni untuk mendorong pengembangan potensi manusia, masyarakat, dan alam untuk mewujudkan kesejahteraan masyarakat.</li>
+              <li class="mb-2">Menyelenggarakan tata kelola fakultas yang akuntabel, transparan, adil, inovatif, dan sinergis untuk mendukung pelaksanaan Tridarma Perguruan Tinggi dan kinerja kelembagaan berbasis teknologi informasi dan komunikasi.</li>
+              <li class="mb-2">Menyelenggarakan kerjasama dengan bidang ilmu dan pendidikan bahasa, sastra, dan seni dengan lembaga pendidikan dan nonkependidikan, baik dalam maupun luar negeri untuk meningkatkan kualitas Tridharma Perguruan Tinggi.</li>
+            </ol>
+          </div>
+          <div class="w-full px-4 py-4">
+            <h1 class="text-center text-2xl font-bold mb-4">Agenda</h1>            
+            <ol class="relative border-s border-gray-200">
+              <li class="mb-10 ms-6">
+                <span class="absolute flex items-center justify-center w-6 h-6 bg-indigo-100 rounded-full -start-3 ring-8 ring-white">
+                  <svg class="w-2.5 h-2.5 text-indigo-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                  </svg>
+                </span>
+                <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900">Pelaksanaan Perkuliahan Semester Genap 2021/2022 Pada Masa Tanggap Darurat Bencana Covid-19 di Universitas Negeri Yogyakarta
+                  <span class="bg-indigo-100 text-indigo-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-3">Terbaru</span></h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Dirilis pada 25 January 2022</time>
+                <p class="mb-4 text-base font-normal text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta pariatur voluptatum deserunt facilis adipisci modi quidem unde voluptatibus consequuntur exercitationem!</p>
+              </li>
+              <li class="mb-10 ms-6">
+                <span class="absolute flex items-center justify-center w-6 h-6 bg-indigo-100 rounded-full -start-3 ring-8 ring-white">
+                  <svg class="w-2.5 h-2.5 text-indigo-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                  </svg>
+                </span>
+                <h3 class="mb-1 text-lg font-semibold text-gray-900">Pelaksanaan Perkuliahan Semester Genap 2021/2022 Pada Masa Tanggap Darurat Bencana Covid-19 di Universitas Negeri Yogyakarta</h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Dirilis pada 25 January 2022</time>
+                <p class="text-base font-normal text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ratione voluptatibus perspiciatis repellendus nihil eius eaque hic nemo facere? Temporibus.</p>
+              </li>
+              <li class="ms-6">
+                  <span class="absolute flex items-center justify-center w-6 h-6 bg-indigo-100 rounded-full -start-3 ring-8 ring-white">
+                      <svg class="w-2.5 h-2.5 text-indigo-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                      </svg>
+                  </span>
+                  <h3 class="mb-1 text-lg font-semibold text-gray-900">Pelaksanaan Perkuliahan Semester Genap 2021/2022 Pada Masa Tanggap Darurat Bencana Covid-19 di Universitas Negeri Yogyakarta</h3>
+                  <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Dirilis pada 25 January 2022</time>
+                  <p class="text-base font-normal text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ratione voluptatibus perspiciatis repellendus nihil eius eaque hic nemo facere? Temporibus.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- About section end -->
+  <!-- Portal Kabar start-->
+  <section id="news" class="mx-4">
+    <h1 class="text-center text-2xl font-bold px-4 py-4">Portal Kabar</h1>
+    <div class="flex flex-wrap mb-36">
+      <div class="w-full px-4 lg:w-1/3">
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
+          <img src="dist/img/WhatsApp Image 2024-03-18 at 23.10.52.jpeg" alt="">
+          <div class="py-8 px-6">
+            <caption>5 April 2024</caption>
+            <p class="font-semibold text-black mb-6">Road to ProTEFL Master Under the Heaven 2024 </p>
+            <a href="" class="text-sm hover:text-indigo-500 transition duration-300 ease-in-out">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <div class="w-full px-4 lg:w-1/3">
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
+          <img src="dist/img/WhatsApp Image 2024-03-18 at 23.10.52.jpeg" alt="">
+          <div class="py-8 px-6">
+            <caption>5 April 2024</caption>
+            <p class="font-semibold text-black mb-6">Road to ProTEFL Master Under the Heaven 2024 </p>
+            <a href="" class="text-sm hover:text-indigo-500 transition duration-300 ease-in-out">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <div class="w-full px-4 lg:w-1/3">
+        <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
+          <img src="dist/img/WhatsApp Image 2024-03-18 at 23.10.52.jpeg" alt="">
+          <div class="py-8 px-6">
+            <caption>5 April 2024</caption>
+            <p class="font-semibold text-black mb-6">Road to ProTEFL Master Under the Heaven 2024 </p>
+            <a href="" class="text-sm hover:text-indigo-500 transition duration-300 ease-in-out">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Portal Kabar end -->
+  <!-- footer start -->
+  <footer class="bg-indigo-500 pt-12 bg-gradient-to-b from-indigo-400 to-indigo-500">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="w-full px-4 mb-12 text-white font-medium md:w-1/3">
+          <a href="https://fbsb.uny.ac.id">
+            <img class="w-36 mb-6" src="dist/img/logo-uny.png" alt="Logo UNY">
+          </a>
+          <p class="md:text-xl lg:text-sm my-2">Fakultas Bahasa, Seni dan Budaya</p>
+          <p class="md:text-xl lg:text-sm my-2">Universitas Negeri Yogyakarta</p>
+          <p class="md:text-xl lg:text-sm my-2">Colombo Street No 1, Yogyakarta, 55281</p>
+          <a href="mailto:fbsb@uny.ac.id" class="block md:text-xl lg:text-sm my-2 hover:text-indigo-500
+"><i class="fa fa-envelope"></i>
+          fbsb@uny.ac.id
+          </a>
+          <a href="tel:+62274550843" class="block md:text-xl lg:text-sm my-2 hover:text-indigo-500"><i class="fa fa-phone"></i>
+          (0274)550843
+          </a>
+          <a href="fax:+62274548207" class="block md:text-xl lg:text-sm my-2 hover:opacity-80"><i class="fa fa-fax"></i>
+          (0274)548207
+          </a>
+        </div>
+        <div class="text-white w-full px-4 mb-12 md:w-1/3">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.1626087138243!2d110.3802127077172!3d-7.77257567706618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59b5dc8d6b65%3A0xfe4b0d32684c051a!2sFakultas%20Bahasa%2C%20Seni%2C%20dan%20Budaya%20(FBSB)%20Universitas%20Negeri%20Yogyakarta!5e0!3m2!1sid!2sid!4v1712401863978!5m2!1sid!2sid" width="250" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="w-full px-4 mb-12 text-white font-medium md:w-1/3">
+          <form class="flex items-center max-w-sm mx-auto">   
+            <label for="simple-search" class="sr-only">Search</label>
+            <div class="relative w-full">
+                <div class="absolute inset-y-0 start-0 flex items-center px-3 pointer-events-none">
+                    <svg class="w-4 h-4 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5v10M3 5a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm12 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0V6a3 3 0 0 0-3-3H9m1.5-2-2 2 2 2"/>
+                    </svg>
+                </div>
+                <input type="text" id="simple-search" class="bg-gray-50 border border-gray-600 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full ps-10 p-2.5 placeholder-gray-400" placeholder="Pencarian..." required />
+            </div>
+            <button type="submit" class="p-2.5 mx-2 text-sm font-medium text-black bg-white rounded-lg border border-black hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-indigo-800 ">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                </svg>
+                <span class="sr-only">Search</span>
+            </button>
+          </form>
+          <h3 class="font-semibold text-xl my-2">Media Sosial</h3>
+          <a href="https://www.instagram.com/fbsbuny/" class="block md:text-xl lg:text-sm my-2 hover:opacity-80"><i class="text-md fa-brands fa-instagram"></i><span class="ml-1 relative">@fbsbuny</span>
+          </a>
+          <a href="https://twitter.com/fbs_uny" class="block md:text-xl lg:text-sm my-2  hover:opacity-80"><i class="fa-brands fa-square-x-twitter"></i><span class="ml-1 relative"></span>@fbs_uny</span>
+          </a>
+          <a href="https://www.youtube.com/@UNYOfficial" class="block md:text-xl lg:text-sm my-2 hover:opacity-80"><i class="fa-brands fa-youtube"></i>
+            <span class="ml-1 relative">UNY Official</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="w-full py-2 bg-indigo-500">
+      <p class="font-medium text-xs text-white text-center">Copyright &copy; 2024</p>
+    </div>
+  </footer>
+  <!-- footer end -->
+  <script src="dist/js/script.js"></script>
+</body>
+</html>
